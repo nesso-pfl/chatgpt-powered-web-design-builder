@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 chatgpt_rs = "1.1.1"
 dotenvy = "0.15.7"
+tokio = { version = "1.27.0", features = ["rt-multi-thread"] }
