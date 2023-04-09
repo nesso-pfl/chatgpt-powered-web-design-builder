@@ -14,7 +14,7 @@ async fn main() {
   remove_dir_all(&config.dir).expect("Failed to remove directory.");
   create_dir_all(&config.dir).expect("Failed to create directory.");
   communicate_with_chatgpt(api_key, &config.dir, |content| {
-    save_files(content, &config.dir);
+    save_files(content, &format!("output/{}", &config.dir));
   })
   .await;
 }
