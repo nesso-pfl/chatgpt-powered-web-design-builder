@@ -13,7 +13,7 @@ pub async fn communicate_with_chatgpt<F: Fn(String)>(api_key: String, dir: &str,
     .new_conversation_directed(direction_message);
 
   loop {
-    print!("Request to ChatGPT: ");
+    println!("Request to ChatGPT: ");
     let _ = stdout().flush();
     let mut buf = String::new();
     stdin().read_line(&mut buf).expect("Failed to read line.");
