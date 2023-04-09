@@ -1,4 +1,4 @@
-# output-design-by-chatgpt
+# [WIP]chatgpt-powered-web-design-builder
 ChatGPT outputs your desired web design in HTML + CSS (+ JavaScript) format.
 
 ## Prerequisites
