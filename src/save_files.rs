@@ -1,10 +1,8 @@
-use std::fs::{create_dir_all, remove_dir_all, File};
+use std::fs::File;
 use std::io::Write;
 use std::path::Path;
 
 pub fn save_files(content: String, dir: &str) {
-  remove_dir_all(dir).expect("Failed to remove directory.");
-  create_dir_all(dir).expect("Failed to create directory.");
   save_html(&content, dir);
   save_css(&content, dir);
   save_js(&content, dir);
